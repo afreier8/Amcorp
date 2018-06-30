@@ -1,0 +1,18 @@
+MK309 Compile Commands
+
+gcc -o MK309 MK309_Simulator.c `pkg-config --cflags --libs gtk+-3.0` -rdynamic -lm -lglut -lGLU -lGL
+
+For OpenGL: 
+gcc TacticalGraphics.c -o graphics -lglut -lGLU -lGL
+
+gdb Debugger
+-g
+
+Anthing with <math.h> must include -lm
+
+./MK309
+
+MUST COMPILE AS C PROGRAM FOR GLADE RESOURCE FILE
+
+Most up-to-date
+gcc -g -o MK309 MK309_Simulator.c `pkg-config --cflags --libs gtk+-3.0` `pkg-config --cflags --libs epoxy` -rdynamic -lm -lglut -lGLU -lGL -lGLEW 

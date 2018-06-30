@@ -1,0 +1,4 @@
+
+gcc -o glade SerialCommGlade.c `pkg-config --cflags --libs gtk+-3.0` -rdynamic
+
+

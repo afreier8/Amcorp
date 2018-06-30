@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can_focus">False</property>
+    <property name="icon">SPAWAR_logo.gif</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkGrid">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="lbl_MK309Simulator">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">100</property>
+                <property name="margin_right">100</property>
+                <property name="margin_top">50</property>
+                <property name="margin_bottom">50</property>
+                <property name="label" translatable="yes">MK309 Simulator</property>
+                <attributes>
+                  <attribute name="foreground" value="#34346565a4a4"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_RangeScale">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">20</property>
+                <property name="margin_right">20</property>
+                <property name="margin_top">20</property>
+                <property name="margin_bottom">20</property>
+                <property name="label" translatable="yes">Range Scale (yards)</property>
+                <attributes>
+                  <attribute name="foreground" value="#cccc00000000"/>
+                  <attribute name="background" value="#eeeeeeeeecec"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="combo_RangeScale">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="active">0</property>
+                <items>
+                  <item id="rangeScale_2500" translatable="yes">2500</item>
+                  <item id="rangeScale_5000" translatable="yes">5000</item>
+                  <item id="rangeScale_10000" translatable="yes">10000</item>
+                  <item id="rangeScale_15000" translatable="yes">15000</item>
+                  <item translatable="yes">20000</item>
+                </items>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="lbl_Ownship">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_top">50</property>
+                <property name="margin_bottom">25</property>
+                <property name="label" translatable="yes">OWNSHIP</property>
+                <attributes>
+                  <attribute name="underline" value="True"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_CQO">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin_left">10</property>
+                <property name="label" translatable="yes">CQO</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_CQO">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin_left">10</property>
+                <property name="placeholder_text" translatable="yes">0-360 Degrees</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_DMHO">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin_left">10</property>
+                <property name="label" translatable="yes">DMHO</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_DMHO">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="margin_left">10</property>
+                <property name="placeholder_text" translatable="yes">0-25 KTS</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkButton" id="btn_set">
+                    <property name="label" translatable="yes">SET</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="halign">start</property>
+                    <property name="valign">start</property>
+                    <property name="margin_left">10</property>
+                    <property name="margin_right">5</property>
+                    <property name="margin_top">10</property>
+                    <property name="margin_bottom">5</property>
+                    <signal name="clicked" handler="on_btn_set_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="btn_play">
+                    <property name="label" translatable="yes">PLAY</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="margin_left">5</property>
+                    <property name="margin_right">6</property>
+                    <property name="margin_top">10</property>
+                    <property name="margin_bottom">5</property>
+                    <signal name="clicked" handler="on_btn_play_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="btn_stop">
+                    <property name="label" translatable="yes">STOP</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="halign">end</property>
+                    <property name="valign">end</property>
+                    <property name="margin_left">5</property>
+                    <property name="margin_right">5</property>
+                    <property name="margin_top">10</property>
+                    <property name="margin_bottom">5</property>
+                    <signal name="clicked" handler="on_btn_stop_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="txt_Logging">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscroll_policy">natural</property>
+            <property name="vscroll_policy">natural</property>
+            <property name="wrap_mode">word</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="lbl_Target">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">100</property>
+                <property name="margin_right">100</property>
+                <property name="margin_top">40</property>
+                <property name="margin_bottom">25</property>
+                <property name="label" translatable="yes">TARGET</property>
+                <attributes>
+                  <attribute name="underline" value="True"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_ct">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="label" translatable="yes">CT</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_CT">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="margin_bottom">10</property>
+                <property name="placeholder_text" translatable="yes">0-360 Degrees</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_DMHT">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="label" translatable="yes">DMHT</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_DMHT">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="margin_bottom">10</property>
+                <property name="placeholder_text" translatable="yes">0-25 KTS</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_range">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="label" translatable="yes">RANGE</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_RANGE">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="margin_bottom">10</property>
+                <property name="placeholder_text" translatable="yes">0-20k Yards</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="lbl_bearing">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="label" translatable="yes">BEARING</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_BEARING">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="margin_bottom">10</property>
+                <property name="placeholder_text" translatable="yes">0-360 Degrees</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">8</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

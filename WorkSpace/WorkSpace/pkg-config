@@ -1,0 +1,3 @@
+echo $PKG_CONFIG_PATH
+PKG_CONFIG_PATH=/home/april/Documents/WorkSpace/gtk+-3.22.0/
+export PKG_CONFIG_PATH

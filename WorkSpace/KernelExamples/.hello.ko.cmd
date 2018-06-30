@@ -1,0 +1,1 @@
+cmd_/home/afreier/Documents/WorkSpace/KernelExamples/hello.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/afreier/Documents/WorkSpace/KernelExamples/hello.ko /home/afreier/Documents/WorkSpace/KernelExamples/hello.o /home/afreier/Documents/WorkSpace/KernelExamples/hello.mod.o ;  true
